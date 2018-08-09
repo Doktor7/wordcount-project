@@ -1,0 +1,18 @@
+<a href="{% url 'home' %}">Start Again</a>
+
+<h1>your text is :</h1>
+"{{ fulltext }}"
+<h1>and dear! there are {{ count }} words in your fuckin text!</h1>
+
+<h1>word count:</h1>
+
+{% for word, counttotal in word_dic_sorted %}
+
+{{ word }}:
+{{ counttotal }}
+<br/>
+
+{% endfor %}
+<!-- or some thing like this<h1>{{ word_dic_sorted }}</h1> >
+
+
